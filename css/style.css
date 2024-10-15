@@ -3,7 +3,7 @@
     --dark-grey: #282828;
     --white: #ffffff;
     --black: #000000;
-    --light-grey: #c1c1c1;
+    --light-grey: #717378;
     --color-highlight: #9ae22d;
     --red: #ca1717;
 }
@@ -28,7 +28,8 @@ body {
 
 .wrapper {
     background-color: var(--dark-blue);
-    height: 100vh; /*così il contenuto non sborda dalla viewport e non compare la barra di scorrimento*/
+    height: 100vh;
+    /*così il contenuto non sborda dalla viewport e non compare la barra di scorrimento*/
 }
 
 .upper-content {
@@ -110,7 +111,8 @@ main section {
     height: 70px;
     position: fixed;
     top: 0;
-    left: 230px; /* larghezza della sidebar */
+    left: 230px;
+    /* larghezza della sidebar */
     width: calc(100% - 230px);
     z-index: 5000;
     background-color: rgba(0, 0, 0, 0.5);
@@ -152,8 +154,6 @@ nav a:hover::after {
     background-color: var(--color-highlight);
 }
 
-
-
 .card img {
     width: 100%;
     display: block;
@@ -168,15 +168,15 @@ nav a:hover::after {
 }
 
 .overlay {
-    position: absolute; 
-    top: 0; 
+    position: absolute;
+    top: 0;
     background: rgb(0, 0, 0);
     background: rgba(0, 0, 0, 0.5);
-    color: #f1f1f1; 
+    color: #f1f1f1;
     width: 100%;
     height: 100%;
     transition: .5s ease;
-    opacity:0;
+    opacity: 0;
     color: white;
     font-size: 20px;
     padding: 20px;
@@ -219,7 +219,7 @@ footer {
 /* media queries */
 
 @media screen and (max-width: 1200px) {
-    .card { 
+    .card {
         width: calc(100% / 6);
     }
 }
@@ -227,6 +227,10 @@ footer {
 @media screen and (max-width: 992px) {
     .card {
         width: calc(100% / 4);
+    }
+
+    .main-content nav ul {
+        flex-wrap: wrap;
     }
 }
 
