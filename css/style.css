@@ -56,6 +56,14 @@ body {
     flex-wrap: wrap;
 }
 
+.jc-f-end {
+    justify-content: flex-end;
+}
+
+.ai-center {
+    align-items: center;
+}
+
 /* text utilities */
 
 .t-center {
@@ -78,6 +86,19 @@ main {
     width: calc(100% - 230px);
     z-index: 5000;
     background-color: rgba(0, 0, 0, 0.353);
+}
+
+.header a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--white);
+    font-size: smaller;
+}
+
+.btn-upgrade {
+    padding: 10px 25px;
+    border: 0.5px solid var(--white);
+    border-radius: 20px;
 }
 
 .card img {
@@ -119,14 +140,14 @@ main {
     opacity: 1;
 }
 
-#popular .img-round {
-    width: 200px;
-    height: 200px;
+div.img-round {
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     overflow: hidden;
 }
 
-#popular .img-round img {
+.img-round img {
     width: 100%;
 }
 
