@@ -89,6 +89,17 @@ main {
     font-size: 12px;
 }
 
+#popular .img-round {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#popular .img-round img {
+    width: 100%;
+}
+
 footer {
     flex: 0 0 100px;
     background-color: var(--dark-grey);
