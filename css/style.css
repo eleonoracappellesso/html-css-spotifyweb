@@ -106,10 +106,6 @@ main section {
     margin-top: 30px;
 }
 
-section span {
-    font-size: smaller;
-}
-
 .header {
     height: 70px;
     position: fixed;
@@ -134,6 +130,8 @@ section span {
 
 .main-content ul {
     list-style: none;
+    gap: 10px;
+    font-size: small;
 }
 
 nav a {
@@ -141,6 +139,20 @@ nav a {
     color: var(--light-grey);
     display: block;
 }
+
+nav a::after {
+    content: '';
+    display: block;
+    width: 35px;
+    height: 2px;
+    margin: 0 auto;
+}
+
+nav a:hover::after {
+    background-color: var(--color-highlight);
+}
+
+
 
 .card img {
     width: 100%;
