@@ -221,6 +221,15 @@ footer {
     background-color: var(--dark-grey);
 }
 
+.footer-sx, .footer-dx {
+    width: 20%;
+    height: auto;
+}
+
+.footer-center {
+    flex-grow: 1;
+}
+
 /* sidebar */
 
 #sidebar {
@@ -270,7 +279,7 @@ footer {
     color: var(--black);
     text-align: center;
     margin: 0 5px 0 10px;
-    font-weight: 500px;
+    font-weight: 500;
     font-size: 1.5em;
 }
 
