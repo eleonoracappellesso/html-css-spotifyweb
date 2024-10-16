@@ -95,6 +95,10 @@ h4 {
     color: var(--light-grey);
 }
 
+.t-white {
+    color: var(--white);
+}
+
 /* page */
 
 main {
@@ -238,7 +242,7 @@ footer {
 }
 
 .sidebar-top {
-    height: calc(100% - 90px);
+    height: calc(100% - 80px);
 }
 
 #sidebar img:not(#logo img) {
@@ -266,9 +270,15 @@ footer {
     font-size: 1em;
 }
 
+.playlist-nav h3 {
+    margin: 5px 10px;
+    font-size: 1em;
+}
+
 .playlist-nav ul {
     flex: 1 1 auto;
     overflow-y: auto;
+    font-size: small;
 }
 
 .plus {
@@ -284,7 +294,16 @@ footer {
 }
 
 .sidebar-bottom {
-    height: 90px;
+    height: 80px;
+    padding: 10px;
+    color: var(--light-grey);
+    font-size: small;
+}
+
+.sidebar-bottom hr {
+    margin: 10px 5px;
+    color: var(--light-grey);
+
 }
 
 /* media queries */
