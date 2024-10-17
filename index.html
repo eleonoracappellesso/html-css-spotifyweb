@@ -20,84 +20,88 @@
 
         <div class="upper-content d-flex debug">
             <div id="sidebar" class="debug">
-                <!-- top of sidebar -->
-                <div class="sidebar-top d-flex f-column debug">
+                <small>
+                    <!-- top of sidebar -->
+                    <div class="sidebar-top d-flex f-column debug">
 
-                    <div id="logo">
-                        <img src="spotify/img/logo.svg" alt="Spotify logo">
-                        <img src="spotify/img/logo-small.svg" alt="Spotify logo">
-                    </div>
-
-                    <ul class="main-nav">
-                        <li>
-                            <a href="#">
-                                <img src="spotify/img/home.svg" alt="Home Link">
-                                <span class="onlymobile">Home</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="spotify/img/search.svg" alt="Search Link">
-                                <span class="onlymobile">Cerca</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="spotify/img/libreria.svg" alt="Library Link">
-                                <span class="onlymobile">La tua libreria</span>
-                            </a>
-                        </li>
-                    </ul>
-
-                    <div class="playlist-nav d-flex f-column onlymobile">
-                        <h3 class="t-uppercase">Playlist</h3>
-                        <div>
-                            <span class="plus">+</span> Crea Playlist
+                        <div id="logo">
+                            <img src="spotify/img/logo.svg" alt="Spotify logo">
+                            <img src="spotify/img/logo-small.svg" alt="Spotify logo">
                         </div>
-                        <ul>
+
+                        <ul class="main-nav">
                             <li>
-                                <a href="#">Nuova Playlist</a>
+                                <a href="#">
+                                    <img src="spotify/img/home.svg" alt="Home Link">
+                                    <span class="onlymobile">Home</span>
+                                </a>
                             </li>
                             <li>
-                                <a href="#">Nuova Playlist</a>
+                                <a href="#">
+                                    <img src="spotify/img/search.svg" alt="Search Link">
+                                    <span class="onlymobile">Cerca</span>
+                                </a>
                             </li>
                             <li>
-                                <a href="#">Nuova Playlist</a>
-                            </li>
-                            <li>
-                                <a href="#">Nuova Playlist</a>
-                            </li>
-                            <li>
-                                <a href="#">Nuova Playlist</a>
-                            </li>
-                            <li>
-                                <a href="#">Nuova Playlist</a>
-                            </li>
-                            <li>
-                                <a href="#">Nuova Playlist</a>
+                                <a href="#">
+                                    <img src="spotify/img/libreria.svg" alt="Library Link">
+                                    <span class="onlymobile">La tua libreria</span>
+                                </a>
                             </li>
                         </ul>
-                    </div>
-                </div>
 
-                <!-- bottom of sidebar-->
-                <div class="sidebar-bottom debug">
-                    <div>
-                        <i class="fa-regular fa-circle-down">
-                        </i>
-                        Installa app
+                        <div class="playlist-nav d-flex f-column onlymobile">
+                            <h3 class="t-uppercase">Playlist</h3>
+                            <div>
+                                <span class="plus">+</span> Crea Playlist
+                            </div>
+                            <ul>
+                                <li>
+                                    <a href="#">Nuova Playlist</a>
+                                </li>
+                                <li>
+                                    <a href="#">Nuova Playlist</a>
+                                </li>
+                                <li>
+                                    <a href="#">Nuova Playlist</a>
+                                </li>
+                                <li>
+                                    <a href="#">Nuova Playlist</a>
+                                </li>
+                                <li>
+                                    <a href="#">Nuova Playlist</a>
+                                </li>
+                                <li>
+                                    <a href="#">Nuova Playlist</a>
+                                </li>
+                                <li>
+                                    <a href="#">Nuova Playlist</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <hr>
-                    <div>
-                        <i class="fa-solid fa-circle-user"></i>
-                        <strong class="t-white">
-                            John Doe
-                        </strong>
+
+                    <!-- bottom of sidebar-->
+                    <div class="sidebar-bottom debug">
+                        <div>
+                            <i class="fa-regular fa-circle-down">
+                            </i>
+                            Installa app
+                        </div>
+                        <hr>
+                        <div class="d-flex ai-center">
+                            <div class="profile-icon">
+                                <img src="spotify/img/profile.svg" alt="Profile Icon">
+                            </div>
+                            <strong class="t-white">
+                                John Doe
+                            </strong>
+                        </div>
                     </div>
-                </div>
+                </small>
             </div>
-            <main class="debug">
 
+            <main class="debug">
                 <div class="header d-flex jc-f-end ai-center">
                     <a href="" class="btn-upgrade t-uppercase">
                         effettua l'upgrade
@@ -319,17 +323,19 @@
                 </div>
                 <div class="player-time d-flex jc-space-bwtn ai-center">
                     <div><small>0.25</small></div>
-                    <div class="time-controller">
+                    <div class="d-flex ai-center jc-center time-controller">
                         <input type="range" value="25" min="0" max="100">
                     </div>
                     <div><small>4.35</small></div>
                 </div>
             </div>
             <div class="footer-dx d-flex jc-space-bwtn ai-center onlymobile debug">
-                    <i class="fa-solid fa-list-ul"></i>
-                    <i class="fa-solid fa-display"></i>
-                    <i class="fa-solid fa-volume-high"></i>
-                <input class="slider" type="range">
+                <i class="fa-solid fa-list-ul"></i>
+                <i class="fa-solid fa-display"></i>
+                <i class="fa-solid fa-volume-high"></i>
+                <div class="d-flex ai-center volume">
+                    <input type="range" value="40" min="0" max="100">
+                </div>
             </div>
 
         </footer>
