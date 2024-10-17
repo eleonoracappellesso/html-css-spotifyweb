@@ -16,8 +16,9 @@
 </head>
 
 <body>
-    <div class="wrapper d-flex f-column"> <!--qui ci sarà tutto il contentuo dell'app-->
+    <div class="wrapper d-flex f-column">
 
+        <!-- sidebar -->
         <div class="upper-content d-flex debug">
             <div id="sidebar" class="debug">
                 <small>
@@ -52,7 +53,7 @@
 
                         <div class="playlist-nav d-flex f-column onlymobile">
                             <h3 class="t-uppercase">Playlist</h3>
-                            <div class="d-flex ai-center hover-pointer">
+                            <div class="d-flex ai-center hover-pointer create-playlist">
                                 <i class="fa-solid fa-plus plus-btn"></i>
                                 <span class="t-grey hover-t-white">Crea Playlist</span>
                             </div>
@@ -87,7 +88,7 @@
                         <div class="hover-t-white hover-pointer">
                             <i class="fa-regular fa-circle-down">
                             </i>
-                            <span class="t-bold onlymobile">Installa app</span> 
+                            <span class="t-bold onlymobile">Installa app</span>
                         </div>
                         <hr>
                         <div class="d-flex ai-center hover-pointer">
@@ -102,6 +103,7 @@
                 </small>
             </div>
 
+            <!-- main -->
             <main class="debug">
                 <div class="header d-flex jc-f-end ai-center">
                     <a href="" class="btn-upgrade t-uppercase">
@@ -298,20 +300,23 @@
             </main>
         </div>
 
+        <!-- footer -->
         <footer class="d-flex jc-space-bwtn ai-center debug">
+
             <div class="footer-sx d-flex jc-space-bwtn ai-center  debug">
-                <div class="d-flex">
+                <div class="d-flex hover-pointer">
                     <img src="spotify/img/sinister.jpeg" alt="Sinister Cover">
-                    <div class="ac-center hover-pointer">
+                    <div class="ac-center">
                         <h5 class="hover-underline">Sinister</h5>
                         <small>Brano Nome</small>
                     </div>
                 </div>
                 <div class="onlymobile">
                     <i class="fa-regular fa-heart"></i>
-                    <i class="fa-regular fa-folder"></i>
+                    <i class="fa-regular fa-folder p-left5"></i>
                 </div>
             </div>
+
             <div class="footer-center debug">
                 <div class="player-icons">
                     <ul class="d-flex jc-center ai-center">
@@ -330,6 +335,7 @@
                     <div><small>4.35</small></div>
                 </div>
             </div>
+
             <div class="footer-dx d-flex jc-space-bwtn ai-center debug">
                 <i class="fa-solid fa-list-ul"></i>
                 <i class="fa-solid fa-display"></i>

@@ -20,6 +20,10 @@
 
 /* generals */
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: var(--dark-blue);
     color: white;
@@ -148,7 +152,6 @@ main section {
     position: fixed;
     top: 0;
     left: 230px;
-    /* larghezza della sidebar */
     width: calc(100% - 230px);
     z-index: 4000;
     background-color: rgba(0, 0, 0, 0.5);
@@ -186,6 +189,10 @@ nav a {
     display: block;
 }
 
+nav a:hover {
+    color: var(--white);
+}
+
 nav a::after {
     content: '';
     display: block;
@@ -195,7 +202,6 @@ nav a::after {
 }
 
 nav a:hover::after {
-    color: var(--white);
     background-color: var(--color-highlight);
 }
 
@@ -339,6 +345,7 @@ footer i:hover {
 .time-controller:hover input[type="range"]::-webkit-slider-thumb {
     -webkit-appearance: none;
     opacity: 1;
+    cursor: pointer;
 }
 
 .volume input {
@@ -358,9 +365,10 @@ footer i:hover {
 .volume:hover input[type="range"]::-webkit-slider-thumb {
     -webkit-appearance: none;
     opacity: 1;
+    cursor: pointer;
 }
 
-/* sidebar */
+/*   sidebar-top   */
 
 #sidebar {
     background-color: var(--black);
@@ -469,11 +477,17 @@ footer i:hover {
     font-size: 1.5em;
 }
 
-.plus-btn:hover {
+.create-playlist:hover i{
     background-color: var(--white);
     color: var(--black);
     cursor: pointer;
 }
+
+.create-playlist:hover span {
+    color: var(--white);
+}
+
+/*   sidebar-bottom    */
 
 .sidebar-bottom {
     height: 80px;
@@ -577,12 +591,16 @@ footer i:hover {
         margin-left: 10px;
     }
 
-    .footer-center {
+    /* .footer-center {
         align-items: center;
         justify-content: center;
-    }
+    } */
 
     .footer-dx {
         justify-content: space-around;
+    }
+
+    .footer-dx i{
+        font-size: 0.8em;
     }
 }
