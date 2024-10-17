@@ -25,30 +25,31 @@
 
                     <div id="logo">
                         <img src="spotify/img/logo.svg" alt="Spotify logo">
+                        <img src="spotify/img/logo-small.svg" alt="Spotify logo">
                     </div>
 
                     <ul class="main-nav">
                         <li>
                             <a href="#">
                                 <img src="spotify/img/home.svg" alt="Home Link">
-                                <span>Home</span>
+                                <span class="onlymobile">Home</span>
                             </a>
                         </li>
                         <li>
                             <a href="#">
                                 <img src="spotify/img/search.svg" alt="Search Link">
-                                <span>Cerca</span>
+                                <span class="onlymobile">Cerca</span>
                             </a>
                         </li>
                         <li>
                             <a href="#">
                                 <img src="spotify/img/libreria.svg" alt="Library Link">
-                                <span>La tua libreria</span>
+                                <span class="onlymobile">La tua libreria</span>
                             </a>
                         </li>
                     </ul>
 
-                    <div class="playlist-nav d-flex f-column">
+                    <div class="playlist-nav d-flex f-column onlymobile">
                         <h3 class="t-uppercase">Playlist</h3>
                         <div>
                             <span class="plus">+</span> Crea Playlist
@@ -292,11 +293,11 @@
             </main>
         </div>
 
-        <footer class="d-flex debug">
-            <div class="footer-sx d-flex jc-space-bwtn ai-center debug">
+        <footer class="d-flex jc-space-bwtn ai-center debug">
+            <div class="footer-sx d-flex jc-space-bwtn ai-center onlymobile debug">
                 <div class="d-flex">
                     <img src="spotify/img/sinister.jpeg" alt="Sinister Cover">
-                    <div class="ac-center">
+                    <div class="ac-center onlymobile">
                         <h5>Sinister</h5>
                         <small>Brano Nome</small>
                     </div>
@@ -307,9 +308,24 @@
                 </div>
             </div>
             <div class="footer-center debug">
-                bbbbb
+                <div class="player-icons">
+                    <ul class="d-flex jc-center ai-center">
+                        <li><i class="fa-solid fa-shuffle"></i></li>
+                        <li><i class="fa-solid fa-backward-step"></i></li>
+                        <li><i class="fa-regular fa-circle-play"></i></li>
+                        <li><i class="fa-solid fa-forward-step"></i></li>
+                        <li><i class="fa-solid fa-rotate-right"></i></li>
+                    </ul>
+                </div>
+                <div class="player-time d-flex jc-space-bwtn ai-center">
+                    <div><small>0.25</small></div>
+                    <div class="time-controller">
+                        <input type="range" value="25" min="0" max="100">
+                    </div>
+                    <div><small>4.35</small></div>
+                </div>
             </div>
-            <div class="footer-dx d-flex jc-space-bwtn ai-center debug">
+            <div class="footer-dx d-flex jc-space-bwtn ai-center onlymobile debug">
                     <i class="fa-solid fa-list-ul"></i>
                     <i class="fa-solid fa-display"></i>
                     <i class="fa-solid fa-volume-high"></i>
